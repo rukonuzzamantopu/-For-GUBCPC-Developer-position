@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
+    width: 300px; /* Adjust as needed for responsiveness */
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+    .card {
+        width: 100%;
+        min-width: 0;
+        padding: 12px;
+        font-size: 1em;
+        margin-bottom: 16px;
+    }
+    .card img {
+        width: 100%;
+        height: 140px;
+    }
+    button {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 16px;
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark mode styles */
+/* Button dark mode style */
+.darkModeToggle {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #333;
+}
+body.dark-mode #darkModeToggle {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.card.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card.dark-mode:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
