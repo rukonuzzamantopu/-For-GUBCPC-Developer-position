@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light mode background */
+    transition: background-color 0.3s ease;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px); /* Pop up effect */
+}
+
+.info-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.info-card strong {
+    color: #333;
+}
+
+#darkModeToggle {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+}
+
+.info-card.dark-mode {
+    background-color: #555;
+    color: #eee;
+}
+
+.info-card.dark-mode h2,
+.info-card.dark-mode strong {
+    color: #eee;
+}
+
+.info-card.dark-mode p {
+    color: #ccc;
+}
