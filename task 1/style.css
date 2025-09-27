@@ -104,3 +104,41 @@ body.dark-mode {
 .card.dark-mode:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
+/* task 2 */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 2em;
+  /* background: #555555f; */
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+.contest {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border-bottom: 1px solid #ececec;
+}
+.countdown {
+  font-weight: bold;
+  color: #2d7cff;
+}
+button.reminder {
+  margin-left: 1em;
+  padding: 0.3em 0.8em;
+  border: none;
+  border-radius: 5px;
+  background: #2d7cff;
+  color: #fff;
+  cursor: pointer;
+}
+.past-contest {
+  font-size: 0.95em;
+  margin-bottom: 0.6em;
+  color: #555;
+}
