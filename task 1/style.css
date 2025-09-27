@@ -18,7 +18,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     text-align: left;
-    width: 300px; /* Adjust as needed for responsiveness */
+    width: 300px; 
 }
 
 @media (max-width: 600px) {
@@ -78,7 +78,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Dark mode styles */
 /* Button dark mode style */
 .darkModeToggle {
     padding: 10px 20px;
